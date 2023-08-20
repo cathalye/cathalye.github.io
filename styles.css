@@ -1,0 +1,127 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin-top: 2vw;
+}
+
+header {
+  background-color: #fff; /* color of the navigation bar */
+  padding: 1rem 0; /* add padding to the top and bottom of the navigation bar */
+  position: sticky; /* keep the navigation bar in view when scrolling */
+  top: 0;
+  z-index: 100; /* make sure the navigation bar is on top of other elements */
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+/* --------------------------- NAVIGATION BAR ------------------------------- */
+
+
+.navbar {
+  list-style: none; /* remove list bullets */
+  padding: 0;
+  margin: 0;
+  display: flex; /* display navigation items horizontally */
+  justify-content: flex-end; /* right-align the navigation */
+  margin-right: 12vw; /* add a margin to the right -- this depends on the width of the content container in flexbox*/
+  padding: auto;
+  position: sticky; /* keep the navigation bar in view when scrolling */
+  top: 0;
+  z-index: 100; /* make sure the navigation bar is on top of other elements */
+}
+
+.navbar li {
+  margin-left: 1vw; /* add space between navigation items */
+}
+
+.navbar li a {
+  color: #303030; /* color of the text in the navigation bar*/
+  text-decoration: none; /* if not None, the text gets underlines for hyperlinks */
+}
+
+/* ------------------------------- CONTAINERS ------------------------------- */
+
+.main-container {
+  display: flex;
+  max-width: 75vw; /* maximum width of the entire content */
+  margin: 0 auto;
+  padding-top: 2rem; /* padding between the navbar and main sections */
+}
+
+/* headshot and social links take up 33% of the screen */
+.headshot-section {
+  flex: 1; /* take up 1/3 of the screen */
+  height: 100vh; /* add space between the sidebar and content */
+  position: sticky; /* keep the headshot section in view when scrolling */
+  top: 0;
+  bottom: 0;
+}
+
+/* remaining sections take up 67% of the screen */
+.content-section {
+  flex: 2;
+}
+
+/* when viewing on smaller screens p to 768px (typical tablet and mobile sizes),
+ stack the columns on top of each other */
+@media (max-width: 768px) {
+  .main-container {
+      flex-direction: column; /* stack columns on top of each other */
+  }
+
+  /* disable sticky scrolling for mobile */
+  .headshot-section{
+    height: auto;
+    position: static;
+    top: initial;
+    bottom: initial;
+  }
+  .content-section {
+      flex: auto;
+      border: none;
+      position: relative;
+      top: initial;
+      padding-top: 20px; /* add some space between columns */
+  }
+}
+
+/* ------------------------------- HEADSHOT --------------------------------- */
+
+.headshot {
+  margin-left: 3em;
+}
+
+.headshot img {
+  max-width: 80%; /* max-width is 80% of the width of headshot container */
+  object-fit: contain;
+}
+
+.headshot-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 3.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links {
+  margin-left: 3.5rem;
+}
+
+/* thumbnail images used for each link */
+.social-links img {
+  width: 1.3rem;
+}
