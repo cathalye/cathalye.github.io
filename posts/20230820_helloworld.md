@@ -4,7 +4,7 @@ date: 2023-08-20
 tags: musing
 ---
 
-Hello World!
+# Hello World!
 
 This is my website. After procrastinating for a few YEARS, I made this in one afternoon on a particularly boring Saturday. Seems about right.
 
