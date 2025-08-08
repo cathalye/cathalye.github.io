@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -------------------------->
+  <!----------------------- Google tag (gtag.js) ------------------------------>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-37XH2CJCVS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -14,29 +14,16 @@
 
   <!--------------------------- SEO stuff ------------------------------------->
 
-  <meta name="google-site-verification" content="33H5OW2OlY9N242vvk-LAAIS9m-84Om9_hZJRzDEU7k" />
+  <meta name="google-site-verification" content="I1xMdIgMzfypIhP53uZrJr0x_Ru3huU_NFwhpw-e9Jw" />
 
+  <meta name="application-name" content="Chinmayee Athalye">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chinmayee Athalye</title>
-  <meta name="description" content="Chinmayee Athalye is a Bioengineering PhD student at University of Pennsylvania specializing in medical imaging, computer vision, and machine learning for Alzheimer's disease research.">
+  <meta name="description" content="Chinmayee Athalye is a Bioengineering PhD student at University of Pennsylvania specializing in medical imaging, computer vision, and AI for biomedical research.">
   <meta name="keywords" content="Chinmayee Athalye, bioengineering, PhD, medical imaging, computer vision, machine learning, Alzheimer's disease, University of Pennsylvania, PICSL, research">
   <meta name="author" content="Chinmayee Athalye">
   <meta name="robots" content="index, follow">
-
-  <!--------------------------- Open Graph / Facebook ------------------------->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cathalye.github.io/">
-  <meta property="og:title" content="Chinmayee Athalye - Bioengineering PhD Student">
-  <meta property="og:description" content="Bioengineering PhD student at University of Pennsylvania specializing in medical imaging, computer vision, and machine learning for Alzheimer's disease research.">
-  <meta property="og:image" content="https://cathalye.github.io/assets/chinmayee_athalye_avatar_rect.jpg">
-
-  <!--------------------------- Twitter --------------------------------------->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://cathalye.github.io/">
-  <meta property="twitter:title" content="Chinmayee Athalye - Bioengineering PhD Student">
-  <meta property="twitter:description" content="Bioengineering PhD student at University of Pennsylvania specializing in medical imaging, computer vision, and machine learning for Alzheimer's disease research.">
-  <meta property="twitter:image" content="https://cathalye.github.io/assets/chinmayee_athalye_avatar_rect.jpg">
 
   <!--------------------------- JSON-LD Structured Data ----------------------->
   <script type="application/ld+json">
@@ -50,7 +37,6 @@
       "name": "University of Pennsylvania",
       "department": "Penn Image Computing and Science Lab (PICSL)"
     },
-    "email": "cathalye@seas.upenn.edu",
     "url": "https://cathalye.github.io/",
     "image": "https://cathalye.github.io/assets/chinmayee_athalye_avatar_oval.jpg",
     "sameAs": [
@@ -85,9 +71,8 @@
 
 </head>
 
-
 <body>
-<!---------------------------- NAVIGATION BAR --------------------------------->
+  <!---------------------------- NAVIGATION BAR ------------------------------->
   <!-- <header>
     <nav>
       <ul class="navbar">
@@ -99,13 +84,13 @@
     </nav>
   </header> -->
 
-<!---------------------------- MAIN CONTAINER --------------------------------->
+  <!---------------------------- MAIN CONTAINER ------------------------------->
   <main class="main-container">
 
     <!----------------------------- HEADSHOT ---------------------------------->
     <section class="headshot-section">
       <div class="headshot">
-        <img src="assets/chinmayee_athalye_avatar_oval.jpg" alt="headshot" align="top">
+        <img src="assets/chinmayee_athalye_avatar_rect.jpg" alt="headshot" align="top">
       </div>
 
       <div class="headshot-name">
@@ -114,12 +99,21 @@
 
       <div class="social-links">
         <p>
-          Email: <a href="mailto:cathalye@seas.upenn.edu"> cathalye@seas.upenn.edu </a>
+          Email: <a href="#" onclick="showEmail(); return false;">[Click to reveal]</a>
         </p>
+        <script>
+          function showEmail() {
+            const email = 'cathalye' + '@' + 'seas.upenn.edu';
+            const link = event.target;
+            link.href = 'mailto:' + email;
+            link.textContent = email;
+            link.onclick = null;
+          }
+        </script>
         <p>
           <a href="https://www.linkedin.com/in/cathalye/" target="_blank">LinkedIn</a> |
           <a href="https://github.com/cathalye" target="_blank">Github</a> |
-          <a href="https://scholar.google.com/citations?user=-0iDYVsAAAAJ&hl=en" target="_blank">Scholar</a> |
+          <a href="https://scholar.google.com/citations?user=-0iDYVsAAAAJ&hl=en" target="_blank">Google Scholar</a> |
           <a href="assets/chinmayeeathalye_cv.pdf" target="_blank">CV</a>
         </p>
       </div>
@@ -128,70 +122,64 @@
     <!------------------------------ ABOUT ------------------------------------>
     <section class="content-section">
       <h1>About</h1>
-        <p>I am a third year Bionegineering PhD student in the Penn Image Computing and Science Lab (PICSL) at
-          University of Pennsylvania advised by <a href=https://www.med.upenn.edu/apps/faculty/index.php/g275/p2693923>Paul Yushkevich</a>.
-          Before this I worked as a Data Scientist with the <a href=https://arnaoutlab.ucsf.edu/>Arnaout Lab</a> at UCSF.
-          I graduated with a Master's in Computer Science from University of California Irvine where I worked with <a href=https://www.ics.uci.edu/~fowlkes/>Charless Fowlkess</a> and <a href=https://aimerykong.github.io/>Shu Kong</a>.
-          I received my Bachelor's from College of Engineering Pune in India.
-        </p>
+      <p>I'm a 4th year Bioengineering PhD student at the University of Pennsylvania, working at the intersection of machine learning and biomedical research, advised by <a href=https://www.med.upenn.edu/apps/faculty/index.php/g275/p2693923>Paul Yushkevich</a>. My work focuses on developing <span class="semi-bold">computational methods that bridge the gap between complex biological data and actionable insights for translational research.</span></p>
 
-      <!--------------------------- RESEARCH ---------------------------------->
-      <h1>Research</h1>
-        <p>My research interests are in Medical Imaging, Computer Vision and Machine Learning.
-          I am currently working on image registration problems for Alzheimer's Disease Research.
-        </p>
+      <p>Currently, I'm building deep learning approaches for multimodal postmortem brain imaging analysis in Alzheimer's disease research, working to automate the registration (high-fidelity alignment) of MRI and histology data that traditionally takes weeks to process manually. This work builds on my <span class="semi-bold">interdisciplinary background combining bioengineering, computer science, and hands-on experience with large-scale clinical datasets.</span></p>
+
+      <p>Previously, as a Data Scientist in <a href=https://arnaoutlab.ucsf.edu/>Arnaout Lab</a> at UCSF, I worked on machine learning models for rare fetal heart disease detection in ultrasound imaging, where I engineered domain-adaptive data augmentation methods to improve model performance on underrepresented clinical cases. This experience with real-world healthcare data was pivotal in shaping my understanding of how AI can be practically applied to address clinical challenges.</p>
+
+      <p>I completed my Master's in Computer Science at the University of California Irvine where I worked with <a href=https://www.ics.uci.edu/~fowlkes/>Charless Fowlkes</a> and <a href=https://aimerykong.github.io/>Shu Kong</a>. I received my Bachelor's in Electronics & Telecommunication Engineering from the College of Engineering Pune (COEP) in India.</p>
+
+      <p>I'm passionate about developing computational tools that can meaningfully impact translational research and ultimately improve patient outcomes. <span class="semi-bold">I'm currently seeking internship opportunities where I can contribute to cutting-edge AI applications in healthcare and biological discovery.</span></p>
 
       <!------------------------- PUBLICATIONS -------------------------------->
       <h1>Publications</h1>
-        <ul>
-          <li>
-            Operationalizing Postmortem Pathology-MRI Association Studies in Alzheimer's Disease and Related Disorders with MRI-guided Histology Sampling
-            <br>
-            <i><span class="semi-bold">C Athalye</span>, A Bahena, ... P Yushkevich</i>
-            <br>
-            Acta Neuropathologica Communications, 2025
-            <a href="https://link.springer.com/article/10.1186/s40478-025-02030-y"> [Link]</a>
-          </li>
+      <ul>
+        <li>
+          Operationalizing Postmortem Pathology-MRI Association Studies in Alzheimer's Disease and Related Disorders with MRI-guided Histology Sampling
+          <br>
+          <i><span class="semi-bold">C Athalye</span>, A Bahena, ... P Yushkevich</i>
+          <br>
+          Acta Neuropathologica Communications, 2025
+          <a href="https://link.springer.com/article/10.1186/s40478-025-02030-y"> [Link]</a>
+        </li>
 
-          <li>
-            Association of quantitative histopathology measurements with antemortem medial temporal lobe cortical thickness in the Alzheimer’s disease continuum
-            <br>
-            <i>A Denning, ... <span class="semi-bold">C Athalye</span>, ... P Yushkevich</i>
-            <br>
-            Acta Neuropathologica, 2024
-            <a href="https://link.springer.com/article/10.1007/s00401-024-02789-9"> [Link]</a>
-          </li>
+        <li>
+          Association of quantitative histopathology measurements with antemortem medial temporal lobe cortical thickness in the Alzheimer's disease continuum
+          <br>
+          <i>A Denning, ... <span class="semi-bold">C Athalye</span>, ... P Yushkevich</i>
+          <br>
+          Acta Neuropathologica, 2024
+          <a href="https://link.springer.com/article/10.1007/s00401-024-02789-9"> [Link]</a>
+        </li>
 
-          <li>
-            A deep learning model for prenatal congenital heart disease screening generalises to a community setting and outperforms clinical detection
-            <br>
-            <i><span class="semi-bold">C Athalye</span>, A van Nisselrooij, S Rizvi, MC Haak, AJ Moon‐Grady, R Arnaout</i>
-            <br>
-            Ultrasound in Obstetrics & Gynecology, 2023
-            <a href="https://obgyn.onlinelibrary.wiley.com/doi/abs/10.1002/uog.27503"> [Link]</a>
-          </li>
+        <li>
+          A deep learning model for prenatal congenital heart disease screening generalises to a community setting and outperforms clinical detection
+          <br>
+          <i><span class="semi-bold">C Athalye</span>, A van Nisselrooij, S Rizvi, MC Haak, AJ Moon‐Grady, R Arnaout</i>
+          <br>
+          Ultrasound in Obstetrics & Gynecology, 2023
+          <a href="https://obgyn.onlinelibrary.wiley.com/doi/abs/10.1002/uog.27503"> [Link]</a>
+        </li>
 
-          <li>
-            Domain-guided data augmentation for deep learning on medical imaging
-            <br>
-            <i><span class="semi-bold">C Athalye</span>, R Arnaout</i>
-            <br>
-            PLOS ONE, 2023
-            <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0282532"> [Link]</a>
-          </li>
+        <li>
+          Domain-guided data augmentation for deep learning on medical imaging
+          <br>
+          <i><span class="semi-bold">C Athalye</span>, R Arnaout</i>
+          <br>
+          PLOS ONE, 2023
+          <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0282532"> [Link]</a>
+        </li>
 
-          <li>
-            Abandoned object detection using pixel-based finite state machine and single shot multibox detector
-            <br>
-            <i>D Shyam, <span class="semi-bold">C Athalye</span>, A Kot</i>
-            <br>
-            IEEE International Conference on Media and Expo (ICME), 2018
-            <a href="https://ieeexplore.ieee.org/abstract/document/8486464/"> [Link]</a>
-          </li>
-        </ul>
-
-      <!------------------------- MISCELLANEOUS ------------------------------->
-      <h1>Miscellaneuos</h1>
+        <li>
+          Abandoned object detection using pixel-based finite state machine and single shot multibox detector
+          <br>
+          <i>D Shyam, <span class="semi-bold">C Athalye</span>, A Kot</i>
+          <br>
+          IEEE International Conference on Media and Expo (ICME), 2018
+          <a href="https://ieeexplore.ieee.org/abstract/document/8486464/"> [Link]</a>
+        </li>
+      </ul>
 
     </section>
 
@@ -200,9 +188,9 @@
   <footer>
     &copy; <span id="copyright-year"></span> Chinmayee Athalye. All rights reserved.
     <br>
-    Last updated: 21 July 2025
+    Last updated: 08 August 2025
     <script>
-        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+      document.getElementById('copyright-year').textContent = new Date().getFullYear();
     </script>
   </footer>
 
